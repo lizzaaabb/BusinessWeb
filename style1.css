@@ -1,0 +1,246 @@
+
+body{
+    margin: 0;
+    background-image: url(pics/VECTEE~1.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.heading1{
+
+    font-size: 60px;
+    color: #645CAA;
+    background: linear-gradient(to left, #645CAA,#A084CA,#645CAA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent ;
+    font-family: "Unbounded", sans-serif; font-optical-sizing: auto;
+    font-weight: 900; 
+    font-style: normal;
+    text-shadow: 2px 2px 6px rgba(128, 0, 128, 0.5);
+    margin-top: 150px; 
+    margin-left: 20px;
+}
+.heading2{
+    font-size: 35px;
+    background: linear-gradient(to left, #645CAA,#A084CA,#645CAA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent ;
+    font-family: "Unbounded", sans-serif; font-optical-sizing: auto;
+    font-weight: 900; 
+    font-style: normal;
+    margin-left: 20px;
+    margin-bottom: 40%;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    gap: 28px;
+    margin-right: 50px;
+    
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #354649;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #A084CA;
+    transition: 0.3s;
+}
+.navbar a:hover:before{
+    width: 100%;
+
+}
+.lo{
+    width: 10%;
+}
+
+
+
+
+
+
+
+.fut{
+    background-color:#354649;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+.futcontainer{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    line-height: 1.5;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    font-weight: 0;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:#645CAA;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li :not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+}
+
+
+.purp{
+    font-size: 35px;
+    background: linear-gradient(to left, #354649,#6C7A89,#354649);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent ;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 20px;
+    margin-bottom: 5%;
+}
+
+.container3{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-bottom: 20%;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+
+}
+.about-image:hover img{
+    transform: scale(0.8);
+}
+.about-content{
+    flex: 1;
+}
+.abouth{
+    font-size: 30px;
+    color: #354649;
+    margin-bottom: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+
+}
+
+.about-content p{
+    font-size: 18px;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+    line-height: 1.5;
+}
+
+
+
+@media (max-width:574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .heading1{
+        font-size: 2em;
+    }
+    .heading2{
+        font-size: 1.7em;
+    }
+    .purp{
+    font-size: 1.8em;
+    }
+    .abouth{
+        font-size: 1.5em;
+    }
+    .about {
+        flex-direction: column; 
+    }
+
+    .about-image,
+    .about-content {
+        flex: none; 
+        width: 100%; 
+        margin-right: 0; 
+    }
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 10px; 
+    }
+    .navbar .ahref {
+        width: 100%; 
+        box-sizing: border-box;
+        padding: 5px 0;
+        text-align: center;
+    }
+   
+
+
+}
+
